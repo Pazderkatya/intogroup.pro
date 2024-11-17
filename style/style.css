@@ -1,6 +1,7 @@
 @font-face {
   font-family: "cygre";
-  src: url("/cygre_default/Cygre-Light.ttf");
+  src: url("../cygre_default/Cygre-Light.ttf");
+  font-weight: normal;
 }
 * {
   box-sizing: border-box;
@@ -13,8 +14,13 @@ html {
   font-size: 16px;
 }
 
+a.active, a {
+  text-decoration: none;
+  outline: none;
+}
+
 :root {
-  --color-number: linear-gradient(117.4deg, #181919 40.27%, #205ADD 105%)
+  --color-number: linear-gradient(117.4deg, #181919 40.27%, #205ADD 105%);
   --color-bt: linear-gradient(272.85deg, #181919 -6.44%, #205ADD 111.44%);
   --primary-color: linear-gradient(301.05deg, #181919 5.87%, #205ADD 91.47%);
   --text-color: rgba(0, 0, 0, 1);
@@ -33,6 +39,9 @@ body {
 h2 {
   font-size: var(--size-h2);
   color: var(--text-color);
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 60px;
 }
 
 header {
@@ -41,6 +50,12 @@ header {
   background: var(--bg-header);
   border-radius: 20px;
   margin-bottom: 107px;
+}
+
+.card {
+  border-radius: 20px;
+  background: var(--color-wh);
+  padding: 40px 20px;
 }
 
 .menu-header {
@@ -56,7 +71,6 @@ header {
   gap: 20px;
 }
 .menu-header .nav-menu a {
-  text-decoration: none;
   font-size: 0.87rem;
 }
 
@@ -67,7 +81,6 @@ header {
 }
 .button-tel__number {
   font-size: 0.87rem;
-  text-decoration: none;
 }
 
 .container {
@@ -77,11 +90,14 @@ header {
   padding: 10px;
 }
 
-.home .container {
+.home {
   display: flex;
   flex-direction: row;
 }
 
+.home-left {
+  position: relative;
+}
 .home-left__title {
   font-size: 4rem;
   font-weight: 500;
@@ -96,10 +112,126 @@ header {
   font-size: 1.5rem;
 }
 
-.bt {
+.home-right {
+  position: relative;
+}
+.home-right .arrow {
+  position: absolute;
+  bottom: 200px;
+  left: -40px;
+}
+.home-right .screw {
+  position: absolute;
+  bottom: 120px;
+  right: 30px;
+}
+
+.btn {
+  font-family: "cygre";
   background: var(--primary-color);
   padding: 10px 20px;
   border-radius: 20px;
   color: var(--color-wh);
   border: none;
+}
+
+.square {
+  padding: 20px;
+}
+
+.wr-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wr-title .link-disc {
+  color: rgb(0, 0, 0);
+}
+
+.basic {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.basic-text {
+  padding: 40px 20px;
+  max-width: 426px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.basic-text__title {
+  font-size: var(--size-h3);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.basic-text__par {
+  margin-bottom: 190px;
+  font-size: 1.5rem;
+}
+
+.width {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.all-serv {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-column: span 8;
+}
+
+.card-serv {
+  grid-column: span 4;
+}
+.card-serv .link-serv__title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.card-serv .link-serv__text {
+  font-size: 1.5rem;
+}
+
+.dark {
+  background: var(--bg-dark);
+  border-radius: 20px;
+}
+
+.licenses h2 {
+  color: var(--color-wh);
+}
+.licenses .all-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 40px 35px;
+}
+.licenses .all-card .all-card-lic {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-text {
+  margin: 0 auto;
+}
+.card-text__lic {
+  font-size: 1.25rem;
+  color: rgb(0, 0, 0);
+}
+.card-text__name {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.stages {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
