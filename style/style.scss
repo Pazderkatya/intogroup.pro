@@ -84,6 +84,7 @@ section {
         gap: 20px;
         a {
             font-size: 0.87rem;
+            color: #000;
         }
     }
 }
@@ -199,40 +200,38 @@ section {
     grid-column: span 8;
 }
 
-.card-serv {
+
+.link-serv {
+    color: #000;
     grid-column: span 4;
-    .link-serv {
-        &__title {
-            font-size: 2.25rem;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-        &__text {
-            font-size: 1.5rem;
-        }
+    &__title {
+        font-size: 2.25rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 1.5rem;
     }
 }
 
 .dark {
+    h2 {
+        color: var(--color-wh)
+    }
     background: var(--bg-dark);
     border-radius: 20px;
 }
 
-.licenses {
-   h2 {
-    color: var(--color-wh)
-   }
-   .all-card {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 40px 35px;
+.all-card {
+display: flex;
+flex-direction: row;
+gap: 20px;
+padding: 40px 35px;
     .all-card-lic {
         width: 100%;
         display: flex;
         flex-direction: row;
     }
-   }
 }
 
 .card-text {
@@ -271,12 +270,34 @@ section {
 .form-crm {
     border-radius: 20px;
     background: var(--primary-color);
-    .inf {
-        h2 {
-            color: var(--color-wh)
-        }
-        &__pr {
-            color: var(--color-wh);
-        }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.inf {
+    h2 {
+        color: var(--color-wh)
+    }
+    &__pr {
+        color: var(--color-wh);
+    }
+}
+
+.form-bt {
+    border-radius: 20px;
+    padding: 20px;
+    background: var(--color-wh);
+    &__line {
+        margin-right: 20px;
+    }
+}
+
+.foto {
+    img {
+        width: 500px;
+        height: 300px;
     }
 }
