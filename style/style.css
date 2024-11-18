@@ -312,4 +312,17 @@ input {
   width: 400px;
   right: -60px;
   border-radius: 20px;
+}
+
+.adv-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.number-adv {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

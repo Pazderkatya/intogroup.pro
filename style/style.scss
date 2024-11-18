@@ -320,3 +320,16 @@ input {
         border-radius: 20px;
     }
 }
+
+.adv-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.number-adv {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    width: 100%;
+}
