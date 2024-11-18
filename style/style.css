@@ -264,6 +264,9 @@ section {
   border-radius: 20px;
   background: var(--primary-color);
 }
-.form-crm h2 {
+.form-crm .inf h2 {
+  color: var(--color-wh);
+}
+.form-crm .inf__pr {
   color: var(--color-wh);
 }/*# sourceMappingURL=style.css.map */

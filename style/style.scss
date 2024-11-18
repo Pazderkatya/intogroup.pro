@@ -271,7 +271,12 @@ section {
 .form-crm {
     border-radius: 20px;
     background: var(--primary-color);
-    h2 {
-        color: var(--color-wh)
+    .inf {
+        h2 {
+            color: var(--color-wh)
+        }
+        &__pr {
+            color: var(--color-wh);
+        }
     }
 }
