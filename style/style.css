@@ -226,6 +226,7 @@ section {
   padding: 40px 35px;
 }
 .all-card .all-card-lic {
+  grid-column: span 4;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -266,29 +267,49 @@ section {
   border-radius: 20px;
   background: var(--primary-color);
 }
-.form-crm .container {
+.form-crm .wr-form-crm {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.inf {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .inf h2 {
+  width: 100%;
+  max-width: 800px;
   color: var(--color-wh);
 }
 .inf__pr {
   color: var(--color-wh);
+  max-width: 761px;
+  width: 100%;
+  margin-bottom: 60px;
 }
 
-.form-bt {
+input {
   border-radius: 20px;
   padding: 20px;
   background: var(--color-wh);
-}
-.form-bt__line {
-  margin-right: 20px;
+  border: none;
+  text-align: left;
 }
 
+.form-bt__line {
+  margin-right: 20px;
+  width: 100%;
+  max-width: 426px;
+}
+
+.foto {
+  position: relative;
+}
 .foto img {
-  width: 500px;
-  height: 300px;
+  position: absolute;
+  height: 100%;
+  width: 400px;
+  right: -60px;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
