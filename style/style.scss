@@ -25,7 +25,6 @@ a.active, a {
     --color-number: linear-gradient(117.4deg, #181919 40.27%, #205ADD 105%);
     --color-bt: linear-gradient(272.85deg, #181919 -6.44%, #205ADD 111.44%);
     --primary-color: linear-gradient(301.05deg, #181919 5.87%, #205ADD 91.47%);
-    $text-color-white: #fff;
     --text-color: rgba(0, 0, 0, 1);
     --size-h2: 4rem;
     --size-h3: 2.25rem;
@@ -47,6 +46,13 @@ h2 {
     margin-bottom: 60px;
 }
 
+h3 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: left;
+
+}
 
 header {
     height: 73px;
@@ -54,6 +60,10 @@ header {
     background: var(--bg-header);
     border-radius: 20px;
     margin-bottom: 107px;
+}
+
+section {
+    margin-bottom: 100px;
 }
 
 .card {
@@ -231,14 +241,37 @@ header {
         font-size: 1.25rem;
         color: rgba(0, 0, 0, 1);
     }
-    &__name {
-        font-size: 2.25rem;
-        font-weight: 600;
-    }
 }
 
 .stages {
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.card-st {
+    width: 100%;
+    max-width: 493px;
+    &__title {
+        margin-bottom: 22px;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        margin-bottom: 70px;
+    }
+
+    &__result {
+        color: rgba(0, 0, 0, 1);
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+}
+
+.form-crm {
+    border-radius: 20px;
+    background: var(--primary-color);
+    h2 {
+        color: var(--color-wh)
+    }
 }
