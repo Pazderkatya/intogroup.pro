@@ -151,7 +151,7 @@ section {
 
 .btn {
   font-family: "cygre";
-  background: #00CEDB;
+  background: #205ADD;
   padding: 10px 20px;
   border-radius: 20px;
   color: var(--color-wh);
@@ -201,6 +201,7 @@ section {
   width: 100%;
   font-size: 1.5rem;
   text-align: left;
+  background: #205ADD;
 }
 
 .all-serv {
@@ -274,6 +275,11 @@ section {
   justify-content: space-between;
 }
 .card-st .card-top__title {
+  font-family: "cygre semibold";
+  background: var(--color-number);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 22px;
 }
 .card-st .card-top__text {
@@ -292,7 +298,7 @@ section {
 
 .form-crm {
   border-radius: 20px;
-  background: linear-gradient(301.05deg, #fff 5.87%, #205ADD 91.47%);
+  background: var(--primary-color);
 }
 .form-crm .wr-form-crm {
   display: flex;
@@ -341,10 +347,6 @@ input {
   border-radius: 20px;
 }
 
-.advantages {
-  color: var(--color-wh);
-}
-
 .adv-text {
   display: flex;
   flex-direction: row;
@@ -362,6 +364,7 @@ input {
   width: 100%;
 }
 .card-adv span {
+  font-family: "cygre medium";
   background: var(--color-number);
   -webkit-background-clip: text;
   background-clip: text;
@@ -454,4 +457,125 @@ input {
 
 .card-disc {
   font-size: 1.5rem;
+}
+
+.news .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.blog {
+  padding: 20px;
+}
+.blog .card-image {
+  width: 100%;
+  height: 410px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card-inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 379px;
+}
+.card-inf__title {
+  font-family: "cygre medium";
+  font-size: 2rem;
+  margin-right: 50px;
+}
+.card-inf .card-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-inf .card-arrow__data {
+  color: rgba(0, 0, 0, 0.5);
+}
+.card-inf .card-arrow__circle {
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  background: var(--primary-color);
+  position: relative;
+}
+.card-inf .card-arrow__circle svg {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.faq-wr {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.faq__elements {
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.faq__case {
+  width: 100%;
+}
+
+.faq__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: inset -50px 4px 50px 0px rgba(255, 255, 255, 0.69);
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  background: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.faq__button::after {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  background: #F4F4F4;
+  border-radius: 20px;
+}
+
+.faq__title {
+  width: 77%;
+  font-size: 2rem;
+  font-family: "cygre medium";
+  margin-bottom: 20px;
+}
+
+.faq__text {
+  font-size: 1.25rem;
+}
+
+.project {
+  padding: 100px 60px;
+  background: linear-gradient(117.4deg, #181919 40.27%, #205ADD 105%), linear-gradient(202.87deg, rgba(24, 25, 25, 0.2) 50.88%, rgba(32, 90, 221, 0.2) 67.67%);
+  color: var(--color-wh);
+  border-radius: 40px;
+}
+.project h2 {
+  color: var(--color-wh);
+}
+.project .title {
+  max-width: 645px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.project .title p {
+  font-size: 2rem;
+}
+.project .wr-form {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
