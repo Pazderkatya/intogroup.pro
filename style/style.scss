@@ -236,7 +236,7 @@ section {
 }
 
 .dark {
-    background: linear-gradient(117.4deg, #181919 40.27%, #205ADD 105%),
+    background: linear-gradient(117.4deg, #181919 40.27%, #1b3675 105%),
     linear-gradient(202.87deg, rgba(24, 25, 25, 0.2) 50.88%, rgba(32, 90, 221, 0.2) 67.67%);
     border-radius: 20px;
     h2 {
@@ -310,7 +310,7 @@ padding: 40px 35px;
 
 .form-crm {
     border-radius: 20px;
-    background: var(--primary-color);
+    border: 2px solid #fff;
     .wr-form-crm {
         display: flex;
         flex-direction: row;
@@ -578,6 +578,7 @@ input {
 }
 
 .project {
+    color:#000;
     padding: 100px 60px;
     background: linear-gradient(117.4deg, #181919 40.27%, #205ADD 105%),
     linear-gradient(202.87deg, rgba(24, 25, 25, 0.2) 50.88%, rgba(32, 90, 221, 0.2) 67.67%);
@@ -616,6 +617,21 @@ input {
         flex-direction: row;
         gap: 12px;
         margin-bottom: 90px;
+    }
+}
+
+.right-number {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .el-text {
+        p {
+            margin-bottom: 10px;
+        }
+        a {
+            font-size: 2rem;
+            color: var(--color-wh);
+        }
     }
 }
 
