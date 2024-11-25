@@ -298,9 +298,20 @@ padding: 40px 35px;
     flex-direction: row;
     &__arrow {
         position: absolute;
-        top: 200px;
         right: 30px;
     }
+}
+
+.swiper-button-next {
+    max-width: 363px !important;
+    width: 100% !important;
+    height: 21px !important;
+    top: 200px !important;
+    margin-top: 0 !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0 !important;
 }
 
 .card-st {

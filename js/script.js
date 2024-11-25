@@ -1,5 +1,5 @@
 const swiper = new Swiper('.optimization', {
-    slidesPerView: 3,
+    slidesPerView: 2.7,
     spaceBetween: 10,
     loop: true, // Бесконечная прокрутка
     pagination: {
@@ -8,6 +8,5 @@ const swiper = new Swiper('.optimization', {
     },
     navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
     },
 });
