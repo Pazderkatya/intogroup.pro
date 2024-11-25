@@ -336,6 +336,7 @@ padding: 40px 35px;
 }
 
 .form-crm {
+    background: linear-gradient(301.05deg, #181919 5.87%, #205ADD 91.47%);
     border-radius: 20px;
     .wr-form-crm {
         display: flex;
@@ -611,7 +612,7 @@ input {
 .project {
     color:#000;
     padding: 100px 60px;
-    background: linear-gradient(117.4deg, #181919 40.27%, #205ADD 105%), linear-gradient(202.87deg, rgba(24, 25, 25, 0.2) 50.88%, rgba(32, 90, 221, 0.2) 67.67%);
+    background: linear-gradient(117.4deg, #181919 40.27%, #205ADD 105%),linear-gradient(202.87deg, rgba(24, 25, 25, 0.2) 50.88%, rgba(32, 90, 221, 0.2) 67.67%);
     color: var(--color-wh);
     border-radius: 40px;
     h2 {

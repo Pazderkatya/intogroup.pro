@@ -324,6 +324,7 @@ section {
 }
 
 .form-crm {
+  background: linear-gradient(301.05deg, #181919 5.87%, #205ADD 91.47%);
   border-radius: 20px;
 }
 .form-crm .wr-form-crm {
