@@ -17,7 +17,6 @@
 }
 
 html {
-  font-family: "cygre";
   font-size: 16px;
 }
 
@@ -45,6 +44,7 @@ button {
 }
 
 body {
+  font-family: "cygre";
   background: var(--bg-basic);
   color: var(--text-color);
 }
@@ -234,8 +234,8 @@ section {
 }
 
 .link-serv:hover {
-  background: var(--color-wh);
-  color: var(--bg-dark);
+  background: linear-gradient(180deg, rgb(24, 25, 25) 33.64%, #205add);
+  transition: all 300s ease-in-out;
 }
 
 .dark {
@@ -309,15 +309,12 @@ section {
   width: 100%;
   max-width: 493px;
   display: flex;
+  background: rgba(122, 81, 227, 0.25);
   flex-direction: column;
-  justify-content: space-between;
+  color: var(--color-wh);
 }
 .card-st .card-top__title {
   font-family: "cygre semibold";
-  background: var(--color-number);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   margin-bottom: 22px;
 }
 .card-st .card-top__text {
@@ -330,12 +327,11 @@ section {
   width: 100%;
 }
 .card-st .card-bot__result {
-  color: rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
 }
 
 .form-crm {
-  background: linear-gradient(301.05deg, #181919 5.87%, #205ADD 91.47%);
+  background: rgba(122, 81, 227, 0.25);
   border-radius: 20px;
 }
 .form-crm .wr-form-crm {
@@ -702,4 +698,125 @@ iframe {
 footer p {
   font-size: 1.25rem;
   color: rgb(24, 25, 25);
+}
+
+/*Услуги */
+.necessity {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.necessity__text {
+  width: 100%;
+  max-width: 1050px;
+}
+
+.grid-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 21px;
+  width: 100%;
+}
+
+.wrapper-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper-btn__text {
+  text-align: right;
+}
+
+.bizness {
+  max-width: 1380px;
+  border-radius: 40px;
+}
+.bizness p {
+  font-size: 0.87rem;
+}
+
+.wr-biz {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 2fr auto auto;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 10px;
+  width: 100%;
+}
+.wr-biz__foto {
+  grid-area: 1/1/4/3;
+}
+.wr-biz__author {
+  grid-area: 1/3/1/7;
+  border-radius: 20px;
+  padding: 13px 15px;
+  background-color: var(--bg-gray);
+  height: 80px;
+}
+.wr-biz__author h4 {
+  font-family: var(--montserrat);
+  font-weight: bold;
+  text-align: center;
+}
+.wr-biz__author p {
+  text-align: right;
+}
+.wr-biz__title {
+  grid-area: 1/7/1/13;
+}
+.wr-biz__bid {
+  grid-area: 2/4/2/13;
+}
+.wr-biz__picture {
+  grid-area: 3/4/4/6;
+}
+.wr-biz__list {
+  grid-area: 3/7/4/13;
+}
+.wr-biz__text {
+  grid-area: 4/7/4/13;
+}
+.wr-biz__text span {
+  color: #8d8d8d;
+}
+
+.card_hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+.card_hover .card__text {
+  display: none;
+}
+
+.card_hover:hover {
+  justify-content: center;
+  background-color: gray;
+}
+.card_hover:hover .card__picture {
+  width: 50%;
+  height: 50%;
+}
+.card_hover:hover .card__text {
+  display: block;
+}
+
+.list {
+  list-style-type: none;
+  /*list-style-image: url('/img/squ.svg');*/
+}
+.list__item {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--montserrat);
+  font-weight: bold;
+}
+.list__item svg {
+  margin-right: 8px;
+}
+.list__item:not(:last-child) {
+  margin-bottom: 12px;
 }/*# sourceMappingURL=style.css.map */
