@@ -338,16 +338,16 @@ section {
 }
 
 .inf {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 100px;
 }
 .inf h2 {
   width: 100%;
   max-width: 800px;
-  color: var(--color-wh);
 }
 .inf__pr {
-  color: var(--color-wh);
   max-width: 761px;
   width: 100%;
   margin-bottom: 60px;
@@ -372,8 +372,9 @@ input {
 }
 .foto img {
   position: absolute;
-  width: 400px;
-  right: -60px;
+  width: 700px;
+  top: 70px;
+  right: -30px;
   border-radius: 20px;
 }
 
@@ -859,4 +860,6 @@ footer p {
   color: #000;
   grid-column: span 6;
   padding: 30px 40px;
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
