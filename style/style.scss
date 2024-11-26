@@ -66,7 +66,6 @@ h3 {
     font-weight: 600;
     line-height: 43.2px;
     text-align: left;
-
 }
 
 header {
@@ -240,7 +239,8 @@ section {
 
 .link-serv:hover {
     background: linear-gradient(180deg, rgba(24, 25, 25, 1) 33.64%, #205add);
-    transition: all 300s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.05);
 }
 
 
@@ -344,8 +344,6 @@ padding: 40px 35px;
 }
 
 .form-crm {
-    background: rgba(122, 81, 227, 0.25);
-    border-radius: 20px;
     .wr-form-crm {
         display: flex;
         flex-direction: row;
@@ -389,7 +387,6 @@ input {
     position: relative;
     img {
         position: absolute;
-        height: 100%;
         width: 400px;
         right: -60px;
         border-radius: 20px;
@@ -603,6 +600,7 @@ input {
     width: 60px;
     height: 60px;
     background: #F4F4F4;
+    background-image: url(../img/plus.svg);
     border-radius: 20px;
 }
 
@@ -615,6 +613,15 @@ input {
 
 .faq__text {
     font-size: 1.25rem;
+}
+
+.faq__button::after {
+    background-image: url(/img/faq_arrow.svg);
+}
+
+.faq__button[aria-expanded="true"]::after {
+    transform: rotate(30deg);
+    align-self: end;
 }
 
 .project {
@@ -772,18 +779,22 @@ footer {
         grid-area: 1/3/1/7;
         border-radius: 20px;
         padding: 13px 15px;
-        background-color: var(--bg-gray);
+        background-color: var(--bg-dark);
         height: 80px;
         h4 {
-            font-family: var(--montserrat);
             font-weight: bold;
             text-align: center;
+            color: var(--color-wh)
         }
         p {
+            color: var(--color-wh);
             text-align: right;
         }
     }
     &__title {
+        font-family: 'cygre semibold';
+        line-height: normal;
+        font-size: 1.5rem;
         grid-area: 1/7/1/13;
     }
     &__bid {
@@ -804,6 +815,8 @@ footer {
 }
 
 .card_hover {
+    background: var(--bg-dark);
+    color: var(--color-wh);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -816,7 +829,6 @@ footer {
 
 .card_hover:hover {
     justify-content: center;
-    background-color: gray;
     .card__picture {
         width: 50%;
         height: 50%;
@@ -832,7 +844,6 @@ footer {
     &__item {
         display: flex;
         flex-direction: row;
-        font-family: var(--montserrat);
         font-weight: bold;
         svg {
             margin-right: 8px;

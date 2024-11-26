@@ -10,3 +10,7 @@ const swiper = new Swiper('.optimization', {
         nextEl: '.swiper-button-next',
     },
 });
+
+$('.faq__case').on('click', function() {
+    $('.faq__button[aria-expanded="true"]').click()
+})
