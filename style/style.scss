@@ -193,8 +193,7 @@ section {
     padding: 40px 20px;
     max-width: 426px;
     width: 100%;
-    background: var(--bg-dark);
-    color: var(--color-wh);
+    background: var(--color-wh);
     border-radius: 20px;
     &__title {
         font-size: var(--size-h3);
@@ -319,7 +318,7 @@ padding: 40px 35px;
     width: 100%;
     max-width: 493px;
     display: flex;
-    background: rgba(122, 81, 227, 0.25);
+    background: rgba(245, 243, 248, 0.25);
     flex-direction: column;
     color: var(--color-wh);
     .card-top {
@@ -355,7 +354,8 @@ padding: 40px 35px;
     z-index: 1;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
-    padding: 100px;
+    padding: 80px;
+    margin-bottom: 100px;
     h2 {
         width: 100%;
         max-width: 800px;
@@ -388,6 +388,7 @@ input {
     img {
         position: absolute;
         width: 700px;
+        height: 530px;
         top: 70px;
         right: -30px;
         border-radius: 20px;
@@ -838,6 +839,9 @@ footer {
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
+    .card__picture {
+        width: 220px;
+    }
     .card__text {
         display: none;
     }
@@ -882,8 +886,36 @@ footer {
         border-radius: 20px;
         color: #000;
         grid-column: span 6;
-        padding: 30px 40px;
+        padding: 40px;
         display: flex;
         flex-direction: row;
+        position: relative;
+        .text-basic {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 60%;
+        }
+        .text-foto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .more-details {
+            margin-top: 250px;
+        }
     }
+}
+
+.big-num {
+    top: -250px;
+    right: -5px;
+    position: absolute;
+    font-size: 20rem;
+    font-family: 'cygre semibold';
+    color: rgba(60, 58, 58, 0.87)
+}
+
+.bold {
+    font-family: 'cygre semibold';
 }
