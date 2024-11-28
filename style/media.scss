@@ -12,7 +12,11 @@
     }
     .menu-header {
         width: 100%;
+        .nav-menu {
+            display: none;
+        }
     }
+
     
     .home-left__title {
         font-size: 4rem;
@@ -47,8 +51,11 @@
         flex-direction: column;
     }
     .number-adv {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        .card-adv {
+            grid-column: span 6;
+        }
     }
     .news {
         .card-wrapper {
@@ -70,4 +77,142 @@
             display: none;
         }
     }
+    .big-num {
+        font-size: 13rem;
+        top: -150px;
+    }
+    .project {
+        .wr-form {
+            gap: 20px;
+        }
+    }
+
+    .card-basic {
+        top: 100px;
+        left: 0;
+        img {
+            width: 50%;
+        }
+    }
 }
+
+@media screen and (max-width: 850px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .cases-card {
+        gap: 20px;
+    }
+    .project {
+        .wr-form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .form-bt {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .grid-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-st {
+        display: flex;
+        flex-direction: column;
+    }
+    .big-num {
+        display: none;
+    }
+
+    .bottom-ft {
+        display: flex;
+        flex-direction: column;
+        .number-footer {
+            .number {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+    .wrapper-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .faq__title {
+        font-size: 1.5rem;
+    }
+    .faq__text {
+        font-size: 1rem;
+    }
+    .wr-cases {
+        &__result {
+            display: none;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+    .card-adv {
+        span {
+            font-size: 3rem;
+        }
+    }
+    .btn {
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card-basic {
+        top: 200px;
+    }
+    .home-left__title {
+        font-size: 3.5rem;
+    }
+    .home-right {
+        img {
+            display: none;
+        }
+    }
+    .menu-header {
+        gap: 20px;
+    }
+    .all-serv {
+        display: flex;
+        flex-direction: column;
+    }
+    .link-disc {
+        display: none;
+    }
+    .foto {
+        img {
+            display: none;
+        }
+    }
+    .card-text__name {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .right-number .el-text a {
+        font-size: 1.2rem;
+    }
+    .inf {
+        width: 100%;
+    }
+}
+

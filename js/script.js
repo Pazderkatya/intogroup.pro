@@ -9,6 +9,12 @@ const swiper = new Swiper('.optimization', {
     navigation: {
         nextEl: '.swiper-button-next',
     },
+    breakpoints: {
+        1100: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        }
+    }
 });
 
 $('.faq__case').on('click', function() {
