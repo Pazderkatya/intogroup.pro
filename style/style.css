@@ -25,8 +25,7 @@ a.active, a {
   outline: none;
 }
 
-К a,
-button {
+a, button {
   cursor: pointer;
 }
 
@@ -110,6 +109,14 @@ section {
   color: var(--text-color);
   font-size: 0.87rem;
   font-weight: 700;
+}
+
+.phone__mob {
+  display: block;
+}
+
+.phone__menu {
+  display: block;
 }
 
 .container {
@@ -712,7 +719,15 @@ footer p {
 /*Услуги */
 .black {
   background-color: var(--bg-dark);
+}
+.black h2 {
   color: var(--color-wh);
+}
+.black .ft-adress, .black .bottom-ft .number-footer .number, .black footer p, .black .necessity, .black .bizness {
+  color: var(--color-wh);
+}
+.black .faq-wr {
+  color: #000;
 }
 
 .necessity {
@@ -894,4 +909,8 @@ footer p {
 
 .bold {
   font-family: "cygre semibold";
+}
+
+.white {
+  color: var(--color-wh);
 }/*# sourceMappingURL=style.css.map */

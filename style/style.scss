@@ -23,7 +23,7 @@ html {
 a.active, a {
     text-decoration: none;
     outline: none;
-}К
+}
 
 a, button {
     cursor: pointer;
@@ -114,6 +114,14 @@ section {
             font-weight: 700;
         }
     }
+}
+
+.phone__mob {
+    display: block;
+}
+
+.phone__menu {
+    display: block;
 }
 
 .container {
@@ -737,7 +745,15 @@ footer {
 
 .black {
     background-color: var(--bg-dark);
-    color: var(--color-wh)
+    h2 {
+        color: var(--color-wh);
+    }
+    .ft-adress, .bottom-ft .number-footer .number, footer p, .necessity, .bizness {
+        color: var(--color-wh);
+    }
+    .faq-wr {
+        color:#000;
+    }
 }
 
 .necessity {
@@ -918,4 +934,8 @@ footer {
 
 .bold {
     font-family: 'cygre semibold';
+}
+
+.white {
+    color: var(--color-wh);
 }

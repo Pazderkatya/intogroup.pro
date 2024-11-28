@@ -1,0 +1,54 @@
+@media screen and (max-width: 1100px) {
+    h2 {
+        font-size: 3.5rem;
+    } 
+    .container {
+        margin: 0 auto;
+    }
+    .menu-header {
+        width: 100%;
+    }
+    
+    .home-left__title {
+        font-size: 4rem;
+    }
+    
+    .home-left__par {
+        font-size: 1rem;
+    }
+
+    .home {
+        .home-right {
+            .arrow, .screw, .screw-2 {
+                display: none;
+            }
+        }
+    }
+
+    .basic {
+        display: flex;
+        flex-direction: column;
+        .basic-text {
+            width: 100%;
+            max-width: 1100px;
+        }
+    }
+    .all-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .adv-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .number-adv {
+        display: flex;
+        flex-direction: column;
+    }
+    .news {
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
