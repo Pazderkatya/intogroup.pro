@@ -89,6 +89,9 @@
   .cases-card {
     gap: 20px;
   }
+  .project {
+    padding: 30px;
+  }
   .project .wr-form {
     display: flex;
     flex-direction: column;
@@ -147,6 +150,9 @@
   }
 }
 @media screen and (max-width: 550px) {
+  .number-st {
+    padding: 10px;
+  }
   .card-basic {
     top: 200px;
   }
@@ -157,6 +163,7 @@
     display: none;
   }
   .menu-header {
+    padding: 0;
     gap: 20px;
   }
   .all-serv {
@@ -178,6 +185,7 @@
     font-size: 1.2rem;
   }
   .inf {
+    padding: 30px;
     width: 100%;
   }
 }/*# sourceMappingURL=media.css.map */
