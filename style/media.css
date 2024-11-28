@@ -2,6 +2,9 @@
   h2 {
     font-size: 3.5rem;
   }
+  h3 {
+    font-size: 2.2rem;
+  }
   .container {
     margin: 0 auto;
   }
@@ -40,5 +43,19 @@
   .news .card-wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .grid-card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .grid-card .card_hover {
+    grid-column: span 6;
+  }
+  .wr-biz {
+    display: flex;
+    flex-direction: column;
+  }
+  .wr-biz__foto {
+    display: none;
   }
 }/*# sourceMappingURL=media.css.map */

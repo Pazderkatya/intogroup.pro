@@ -349,6 +349,7 @@ section {
   border-radius: 20px;
   padding: 80px;
   margin-bottom: 100px;
+  color: var(--color-wh);
 }
 .inf h2 {
   width: 100%;
