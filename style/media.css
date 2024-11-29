@@ -14,14 +14,20 @@
   .menu-header .nav-menu {
     display: none;
   }
+  .reviews img {
+    display: none;
+  }
   .home-left__title {
     font-size: 4rem;
   }
   .home-left__par {
     font-size: 1rem;
   }
-  .home .home-right .arrow, .home .home-right .screw, .home .home-right .screw-2 {
+  .home-right {
     display: none;
+  }
+  .home-left .btn-wr {
+    margin-bottom: 100px;
   }
   .basic {
     display: flex;
@@ -78,8 +84,18 @@
   .card-basic img {
     width: 50%;
   }
+  .card-inf {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 850px) {
+  .stages-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .inf {
+    padding: 20px;
+  }
   h2 {
     font-size: 3rem;
   }

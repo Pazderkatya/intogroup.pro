@@ -46,6 +46,7 @@ body {
   font-family: "cygre";
   background: var(--bg-basic);
   color: var(--text-color);
+  position: relative;
 }
 
 h2 {
@@ -88,9 +89,10 @@ section {
   flex-direction: row;
   gap: 160px;
   justify-content: space-between;
-  padding: 10px;
+  padding: 7px;
 }
 .menu-header .nav-menu {
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -104,6 +106,9 @@ section {
   display: flex;
   flex-direction: row;
   gap: 13px;
+}
+.button-tel__number {
+  padding-top: 7px;
 }
 .button-tel__number a {
   color: var(--text-color);
@@ -129,37 +134,49 @@ section {
 .home {
   display: flex;
   flex-direction: row;
-}
-
-.home-left {
   position: relative;
 }
+
 .home-left__title {
   font-size: 4rem;
   font-weight: 500;
   margin-bottom: 60px;
   line-height: 76px;
+  max-width: 970px;
+  width: 100%;
 }
 .home-left__title span {
   font-family: "cygre medium";
 }
 .home-left__par {
+  max-width: 800px;
+  width: 100%;
   margin-bottom: 80px;
   font-size: 1.5rem;
 }
+.home-left .btn-wr {
+  margin-bottom: 200px;
+}
 
-.home-right {
-  position: relative;
+.home-right .logo {
+  position: absolute;
+  top: 120px;
+  right: 0;
 }
 .home-right .arrow {
   position: absolute;
-  bottom: 200px;
-  left: -40px;
+  top: 580px;
+  right: 370px;
+}
+.home-right .screw-2 {
+  position: absolute;
+  top: 650px;
+  right: 30px;
 }
 .home-right .screw {
   position: absolute;
-  bottom: 120px;
-  right: 30px;
+  top: 100px;
+  right: 300px;
 }
 
 .btn {
@@ -253,6 +270,10 @@ section {
   color: var(--color-wh);
 }
 
+.licenses {
+  margin-top: 100px;
+}
+
 .all-card {
   display: flex;
   flex-direction: row;
@@ -313,12 +334,16 @@ section {
 }
 
 .card-st {
+  height: 500px;
   width: 100%;
   max-width: 493px;
   display: flex;
   background: rgba(245, 243, 248, 0.25);
   flex-direction: column;
   color: var(--color-wh);
+}
+.card-st .card-top {
+  height: 200px;
 }
 .card-st .card-top__title {
   font-family: "cygre semibold";
@@ -329,6 +354,7 @@ section {
   margin-bottom: 70px;
 }
 .card-st .card-bot {
+  height: 100px;
   font-size: 1.25rem;
   max-width: 334px;
   width: 100%;
@@ -349,16 +375,24 @@ section {
   border-radius: 20px;
   padding: 80px;
   margin-bottom: 100px;
-  color: var(--color-wh);
 }
 .inf h2 {
   width: 100%;
   max-width: 800px;
+  color: var(--bg-dark) !important;
 }
-.inf__pr {
+.inf .wr-par {
+  margin-right: 50px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--bg-dark);
+  margin-bottom: 60px;
+  transform: translateX(250px);
+}
+.inf .wr-par__inf {
+  color: var(--color-wh);
   max-width: 761px;
   width: 100%;
-  margin-bottom: 60px;
 }
 
 input {
@@ -470,6 +504,7 @@ input {
 }
 
 .card-basic {
+  position: relative;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
@@ -480,6 +515,12 @@ input {
   flex-direction: row;
   max-width: 810px;
   width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .card-rev {
@@ -522,6 +563,7 @@ input {
 }
 
 .card-inf {
+  height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -601,7 +643,7 @@ input {
 }
 
 .faq__text {
-  display: block;
+  display: none;
   font-size: 1.25rem;
 }
 

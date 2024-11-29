@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,20 +36,20 @@
     <main>
         <div class="container">
             <section class="home">
-                    <div class="home-left">
-                        <h1 class="home-left__title">IT-услуги для вашего бизнеса - <span>просто, удобно, эффективно</span></h1>
-                        <p class="home-left__par">Мы готовы взорвать ваши продажи с помощью крутой CRM-системы!
-                            Наш индивидуальный подход, профессиональный анализ и мощные
-                            решения помогут вашему бизнесу достичь невиданных высот. </p>
-                        <div><button class="btn square">Оставить заявку</button></div>
-                    </div>
-                    <div class="home-right">
-                        <img src="img/logo.png" alt="">
-                        <img class="arrow"src="img/logo-1.png" alt="">
-                        <img class="screw" src="img/logo-2.png" alt="">
-                        <img class="screw-2" src="img/logo-2.png" alt="">
-                    </div>
+                <div class="home-left">
+                    <h1 class="home-left__title">IT-услуги для вашего бизнеса - <span>просто, удобно, эффективно</span></h1>
+                    <p class="home-left__par">Мы готовы взорвать ваши продажи с помощью крутой CRM-системы!
+                                Наш индивидуальный подход, профессиональный анализ и мощные
+                                решения помогут вашему бизнесу достичь невиданных высот. </p>
+                    <div class="btn-wr"><button class="btn square">Оставить заявку</button></div>
+                </div>
             </section>
+            <div class="home-right">
+                <img class="logo" src="img/logo.png" alt="">
+                <img class="arrow"src="img/logo-1.png" alt="">
+                <img class="screw" src="img/logo-2.png" alt="">
+                <img class="screw-2" src="img/logo-2.png" alt="">
+            </div>
             <section class="servizes">
                     <div class="wr-title">
                         <h2>Наши услуги</h2>
@@ -188,7 +189,9 @@
                     <div class="inf">
                         <h2>Запишись на бесплатный урок
                             по работе в CRM</h2>
-                        <p class="inf__pr">Ведущие специалисты в области внедрения и ведения CRM систем бесплатно проведут аудит и покажут "узкие" места вашей системы.</p>
+                        <div class="wr-par">
+                            <p class="wr-par__inf">Ведущие специалисты в области внедрения и ведения CRM систем бесплатно проведут аудит и покажут "узкие" места вашей системы.</p>
+                        </div>
                         <div class="wr-form">
                             <form class="form-bt">
                                 <input class="form-bt__line" type="tel" name="phone" placeholder="Ваш номер телефона">
@@ -197,7 +200,7 @@
                         </div>
                     </div>
                     <div class="foto">
-                        <img src="img/bg-form.png" alt="">
+                        <img src="img/color.png" alt="">
                     </div>
                 </div>
             </section>
@@ -301,6 +304,7 @@
                     <a class="link-disc" href="">Все отзывы</a>
                 </div>
                 <div class="card-basic">
+                    <div class="close">X</div>
                     <div class="wrcard-rev">
                         <div class="card-rev">
                             <div class="card-rev__picture">
@@ -513,6 +517,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
 </body>
 
