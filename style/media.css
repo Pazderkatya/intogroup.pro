@@ -15,7 +15,7 @@
     display: none;
   }
   .reviews img {
-    display: none;
+    width: 90%;
   }
   .home-left__title {
     font-size: 4rem;
@@ -112,6 +112,12 @@
     display: flex;
     flex-direction: column;
   }
+  .reviews img {
+    display: none;
+  }
+  .card-basic {
+    position: relative;
+  }
 }
 @media screen and (max-width: 772px) {
   .form-bt {
@@ -164,13 +170,13 @@
   .btn {
     padding: 7px;
   }
+  .card-disc {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 550px) {
   .number-st {
     padding: 10px;
-  }
-  .card-basic {
-    top: 200px;
   }
   .home-left__title {
     font-size: 3.5rem;
@@ -194,6 +200,9 @@
   }
   .card-text__name {
     font-size: 1.2rem;
+  }
+  .all-card-lic img {
+    width: 70%;
   }
 }
 @media screen and (max-width: 450px) {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,16 +20,34 @@
                 </a>
             </div>
             <nav class="nav-menu">
-                <a href="">О компании</a>
-                <a href="services.html">Услуги</a>
-                <a href="sites.html">Лицензии</a>
-                <a href="">Блог</a>
-                <a href="">Кейсы</a>
-                <a href="">Контакты</a>
+                <ul class="list-menu">
+                    <li><a href="">О компании</a></li>
+                    <li class="op-menu"><a href="">Услуги
+                        <ul class="op-menu-list">
+                            <li>
+                                <a href="services.html">СRM</a>
+                            </li>
+                            <li>
+                                <a href="sites.html">Сайты</a>
+                            </li>
+                            <li>
+                                <a href="">Виджеты</a>
+                            </li>
+                            <li>
+                                <a href="">1C</a>
+                            </li>
+                        </ul>
+                    </a></li>
+                    <li><a href="">Лицензии</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="">Кейсы</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
             </nav>
             <div class="button-tel">
                 <div class="button-tel__number"><a href="tel:+79200408114">+7 (920) 040-81-14</a></div>
                 <div class="button-tel__call"><button class="btn">Заказать звонок</button></div>
+                <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none"><path d="M3.33075 8.0903C4.73403 9.65313 6.44174 10.8569 7.83551 10.8569C8.45866 10.8569 9.0057 10.6141 9.44333 10.0755C9.7002 9.75873 9.85718 9.39442 9.85718 9.03011C9.85718 8.75028 9.75728 8.47573 9.51468 8.28566L8.05432 7.13465C7.82124 6.95514 7.63096 6.87066 7.45971 6.87066C7.23614 6.87066 7.03635 7.00794 6.81754 7.25081L6.47504 7.63096C6.41796 7.68903 6.35136 7.71543 6.28952 7.71543C6.21341 7.71543 6.14206 7.68375 6.09449 7.65208C5.79481 7.47256 5.28107 6.98682 4.80538 6.45883C4.32969 5.93085 3.8873 5.36591 3.73033 5.028C3.70179 4.96992 3.678 4.896 3.678 4.81153C3.678 4.74817 3.69703 4.67425 3.74936 4.61089L4.09185 4.22547C4.30591 3.97731 4.43434 3.76084 4.43434 3.51269C4.43434 3.31733 4.35823 3.10614 4.1965 2.85271L3.16426 1.24764C2.98826 0.97309 2.7409 0.856934 2.46976 0.856934C2.14629 0.856934 1.82282 1.01533 1.54217 1.31628C1.06648 1.81258 0.857178 2.43032 0.857178 3.11142C0.857178 4.65841 1.92747 6.53275 3.33075 8.0903Z" fill="white"></path></svg></div>
             </div>
         </div>
     </header>
@@ -185,13 +203,12 @@
                 </section>
             </div>
             <section class="form-crm">
+                <img src="img/vectortop.png" alt="">
                 <div class="wr-form-crm container">
                     <div class="inf">
                         <h2>Запишись на бесплатный урок
                             по работе в CRM</h2>
-                        <div class="wr-par">
-                            <p class="wr-par__inf">Ведущие специалисты в области внедрения и ведения CRM систем бесплатно проведут аудит и покажут "узкие" места вашей системы.</p>
-                        </div>
+                        <p class="wr-par">Ведущие специалисты в области внедрения и ведения CRM систем бесплатно проведут аудит и покажут "узкие" места вашей системы.</p>
                         <div class="wr-form">
                             <form class="form-bt">
                                 <input class="form-bt__line" type="tel" name="phone" placeholder="Ваш номер телефона">
@@ -200,9 +217,12 @@
                         </div>
                     </div>
                     <div class="foto">
-                        <img src="img/color.png" alt="">
+                        <img src="img/mac.png" alt="">
+                        <img src="img/logo-1.png" alt="">
+                        <img src="img/zoom.png" alt="">
                     </div>
                 </div>
+                <img src="img/vectorbr.png" alt="">
             </section>
         </div>
         <div class="container">
@@ -328,7 +348,7 @@
                 </div>
                 <div class="card-wrapper">
                     <div class="card blog">
-                        <div class="card-image"></div>
+                        <div class="card-image"><img src="img/test3.jpg"></div>
                         <div class="card-inf">
                             <h3 class="card-inf__title">Как создать чат-бота
                                 Salesbot в amoCRM?</h3>
@@ -343,7 +363,7 @@
                         <a class="card-link"></a>
                     </div>
                     <div class="card blog">
-                        <div class="card-image"></div>
+                        <div class="card-image"><img src="img/test2.jpg"></div>
                         <div class="card-inf">
                             <h3 class="card-inf__title">Чат-боты в amoCRM</h3>
                             <div class="card-arrow"> 
@@ -357,7 +377,7 @@
                         <a class="card-link"></a>
                     </div>
                     <div class="card blog">
-                        <div class="card-image"></div>
+                        <div class="card-image"><img src="img/test.jpg"></div>
                         <div class="card-inf">
                             <h3 class="card-inf__title">Настройка amoPAY
                                 и управление</h3>
@@ -478,12 +498,12 @@
                         <div class="el-text">
                             <p class="details__text">Написать нам на почту</p>
                             <a href="mailto:info.intogroup@yandex.ru">info.intogroup@yandex.ru</a><br>
-                            <a href="mailto:into.bitrix24@yandex.ru">into.bitrix24@yandex.ru</a>
+                
                         </div>
                         <div class="el-text">
                             <p class="details__text">Поговорить с нами по телефону</p>
                             <a href="tel:+79200408114">+7 (920) 040-81-14</a><br>
-                            <a href:="tel:+79625104914">+7 (962) 510-49-14</a>
+            
                         </div>
                         <div class="el-text">
                             <p class="details__text">Поговорить с нашим аккаунт- менеджером
@@ -496,16 +516,58 @@
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3d52e20dcd553bc338d47fda89d9a68ba2ccba254d50a53c5aa35a8385de69ed&amp;source=constructor" width="100%" height="512" frameborder="0"></iframe>
             </div>
         </section>
+        <div class="modal">
+            <div class="blackout">
+                <div class="close-modal">Х</div>
+                <section class="feedback container">
+                    <div id="window">
+                        <div class="right-side">
+                            <div class="right-side__element">
+                                <h2 class="form__title">
+                                    Нужна консультация?
+                                </h2>
+                                <p>Отправьте свои контактные данные и наш специалист свяжется с вами в ближайшее время</p>
+                            </div>
+                            <div class="right-side__picture">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="left-side">
+                            <form class="window-form">
+                                <input type="hidden" name="desc">
+                                <input type="hidden" name="title">
+                                <input class="window-form__name" type="text" name="name" placeholder="Ваше имя">
+                                <input class="window-form__phone" type="tel" name="phone" placeholder="Ваш номер телефона">
+                                <div class="radio-elements">
+                                    <div class="radio-elements__line">
+                                        <input class="circle" type="radio" name="bisnes" id="WhatsApp" value="WhatsApp" checked="">
+                                        <label for="WhatsApp">WhatsApp</label>
+                                    </div>
+                                    <div class="radio-elements__line">
+                                        <input class="circle" type="radio" name="bisnes" id="Telegram" value="Telegram" checked="">
+                                        <label for="Telegram">Telegram</label>
+                                    </div>
+                                    <div>
+                                        <input class="circle" type="radio" name="bisnes" id="Звонок" value="Звонок" checked="">
+                                        <label for="Звонок">Звонок</label>
+                                    </div>
+                                </div>
+                                <input class="window-form__submit" type="submit" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
+    
     <footer class="container">
         <div class="bottom-ft">
             <div class="number-footer">
                 <a class="number" href="tel:+79200408114">+7 (920) 040-81-14</a><br>
-                <a class="number" href:="tel:+79625104914">+7 (962) 510-49-14</a><br><br>
                 <p class="ft-adress">Время работы: с 9:00 - до 18:00<br>
                     г.Нижний Новгород, ул.Ильинская 119, эт.3</p>
                 <a class="ft-adress" href="mailto:info.intogroup@yandex.ru">info.intogroup@yandex.ru</a><br>
-                <a class="ft-adress" href="mailto:into.bitrix24@yandex.ru">into.bitrix24@yandex.ru</a>
             </div>
             <div class="logo-footer">
                 <img src="img/logo-footer.png">
@@ -517,7 +579,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
 </body>
 
