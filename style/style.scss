@@ -60,9 +60,6 @@ h2 {
     text-align: left;
     font-weight: 500;
     margin-bottom: 60px;
-    line-height: 76.8px;
-
-
 }
 
 h3 {
@@ -371,7 +368,8 @@ padding: 40px 35px;
     flex-direction: row;
     &__arrow {
         position: absolute;
-        right: 30px;
+        right: 20px;
+        top: -500px;
     }
 }
 
@@ -872,6 +870,7 @@ footer {
     color: var(--color-wh);
     display: flex;
     flex-direction: row;
+    margin-bottom: 150px;
     .home-ser-title {
         display: flex;
         flex-direction: column;
@@ -903,9 +902,24 @@ footer {
     }
 }
 
+.wr-btn__par {
+    font-size: 0.8rem;
+    font-family: 'cygre mediun';
+    span {
+        font-size: 2rem;
+    }
+}
+
+.wr-btn__foto {
+    img:not(:last-child) {
+        margin-right: -15px;
+    }
+}     
+
 .top-title {
     margin-top: 80px;
     margin-bottom: 0;
+    width: 900px;
 }
 
 .home-picture {

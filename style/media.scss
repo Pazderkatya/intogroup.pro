@@ -1,6 +1,19 @@
+@media screen and (max-width: 1200px) {
+    .menu-header {
+        width: 100%;
+        .nav-menu {
+            display: none;
+        }
+    }
+    .picture-card {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     h2 {
         font-size: 3.5rem;
+        margin-bottom: 0;
     } 
 
     h3 {
@@ -9,12 +22,6 @@
 
     .container {
         margin: 0 auto;
-    }
-    .menu-header {
-        width: 100%;
-        .nav-menu {
-            display: none;
-        }
     }
     .reviews {
         img {
@@ -92,7 +99,7 @@
     }
 
     .card-basic {
-        top: 100px;
+        top: 0;
         left: 0;
         img {
             width: 50%;
@@ -100,6 +107,22 @@
     }
     .card-inf {
         max-width: 100%;
+    }
+    .wr-bg {
+        &__top, &__bt {
+            img {
+                display: none;
+            }
+        }
+    }
+    .foto {
+        display: none;
+    }
+    .home-btn {
+        display: none;
+    }
+    .stages-title__arrow {
+        display: none!important;
     }
 }
 
@@ -133,6 +156,20 @@
         }
     }
     .card-basic {
+        position: relative;
+    }
+
+    .top-title {
+        font-size: 2.5rem;
+        width: 700px;
+        margin-top: 0;
+    }
+
+    .home-picture__img {
+        display: none;
+    }
+
+    .home-btn {
         position: relative;
     }
 }
@@ -199,15 +236,32 @@
     .card-disc {
         font-size: 1.2rem;
     }
+
+    .up-title {
+        font-size: 2rem;
+    }
+
 }
 
+
+
 @media screen and (max-width: 550px) {
+    section {
+        margin-bottom: 50px;
+    }
+    
     .number-st {
         padding: 10px;
     }
     .home-left__title {
         font-size: 3.5rem;
     }
+
+    .top-title {
+        font-size: 2rem;
+        width: 400px;
+    }
+
     .home-right {
         img {
             display: none;
@@ -235,6 +289,25 @@
     .all-card-lic {
         img {
             width: 70%;
+        }
+    }
+    .home-ser {
+        margin-bottom: 50px;
+        .home-ser-title__pr {
+            max-width: 450px;
+        }
+    }
+    .profit {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .up-title {
+        font-size: 2rem;
+    }
+    .button-tel__number {
+        a {
+            font-size: 0.7rem;;
         }
     }
 }
