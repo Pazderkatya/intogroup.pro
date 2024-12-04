@@ -26,7 +26,7 @@ a.active, a {
 }
 
 li {
-    list-style-type:  none;
+    list-style:  none;
 }
 
 a, button, .close {
@@ -113,7 +113,7 @@ section {
     position: relative;
     ul {
         li {
-            padding: 10px 7px; 
+            padding: 10px 3px; 
         }
     }
 }  
@@ -303,7 +303,7 @@ section {
 }
 
 .link-serv:hover {
-    background: linear-gradient(180deg, rgba(24, 25, 25, 1) 33.64%, #205add);
+    background: linear-gradient(180deg, rgb(249, 250, 250) 33.64%, #205add);
     transition: transform 0.5s ease-in-out;
     transform: scale(1.05);
 }
@@ -558,6 +558,8 @@ input {
     &__btn {
         border: 1px solid rgba(255, 255, 255, 1);
         border-radius: 20px;
+        height: 50px;
+        margin-top: 30px;
         button {
             background: none;
         }
@@ -569,14 +571,25 @@ input {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 700px;
+    max-width: 750px;
     &__result {
-        background: var(--color-wh);
-        padding: 7px;
-        border-radius: 20px;
-        p {
-            color: var(--text-color);
-        }
+        color: var(--color-wh);
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    h3 {
+        padding-top: 30px;
+    }
+}
+
+.result-cas {
+    width: 100%;
+    span {
+        font-family: 'cygre';
+        font-weight: 800;
+        text-align: center;
+        font-size: 4rem;
     }
 }
 
